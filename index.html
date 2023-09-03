@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/01d1b52149.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="form">
+          <textarea
+            id="input-text"
+            rows="5"
+            cols="20"
+            type="text"
+            oninput="formOnInput()"
+            placeholder="Enter your thoughts..."
+          ></textarea>
+          <button id="submit">Submit</button>
+        </div>
+        <span id="inputValidation" style="display: none;">Please input some text</span>
+      </div>
+    </main>
+    <div class="result-container">
+      <div class="result-holder" id="result-holder"></div>
+    </div>
+  </body>
+</html>

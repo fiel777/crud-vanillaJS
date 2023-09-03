@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+main {
+  background-color: #f35f37;
+  height: 30vh;
+  padding: 5rem 0;
+}
+
+.container {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+.container .form textarea {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fff;
+  padding: 1rem;
+}
+.container .form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.container .form button {
+  width: 25%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.result-container {
+  padding: 5rem 0;
+}
+.result-container .result-holder {
+  width: 90%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  height: 500px;
+  padding: 0 1rem;
+  background-color: #f7f8fa;
+}
+.result-container .controls {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.result-container .controls > span {
+  text-transform: uppercase;
+  letter-spacing: -2;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.result-container .edit {
+  background-color: #f35f37;
+}
+.result-container .delete {
+  background-color: rgb(225 29 72);
+}
+.result-container .result-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.list {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.time {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.delete:hover,
+.edit:hover {
+  transform: scale(1.15);
+  transition: all 400ms ease-in;
+}
+#inputValidation {
+  color: white;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 50%;
+  }
+  .result-container .result-holder {
+    width: 50%;
+  }
+}
